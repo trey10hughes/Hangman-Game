@@ -22,7 +22,7 @@
       <h2 class="text-center">Guess your character!</h2>
       <h4 class="text-center" id="getStarted">Press any key to get started!</h4> 
       <hr>
-      <h4 class="text-center">Number of wins: X</h4>
+      <h4 class="text-center" id='numberOfWins'></h4>
       <div class="text-center">
         <button class="btn btn-warning btn-xs theme-button"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>
         <button class="btn btn-default btn-xs pause-button"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
@@ -33,11 +33,12 @@
       <div class="col-md-6">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">Hangman Goes Here</h3>
+            <h3 class="panel-title">Stock Count</h3>
           </div>
           <div class="panel-body">
             <div class="text-center">
-              <img src="http://via.placeholder.com/240x300">
+              <img src="assets/images/fox.jpg" class="stockIcon">
+              <div id='stockCount'></div>
             </div>
           </div>
         </div>
@@ -50,8 +51,8 @@
             <h3 class="panel-title">Letters Guessed</h3>
           </div>
           <div class="panel-body">
-            <div class="text-center">
-              Letters guessed show up in here along with remaining guesses
+            <div class="text-center" id='letters-guessed'>
+              
             </div>
           </div>
         </div>
@@ -63,7 +64,7 @@
           </div>
           <div class="panel-body">
             <div class="text-center" id='display-word-area'>
-              Word being guessed goes here
+              Word being guessed goes here:
             </div>
           </div>
         </div>
