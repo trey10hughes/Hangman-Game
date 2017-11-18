@@ -32,7 +32,7 @@ var game = {
     for(var i = 0; i < this.chosenWord.length; i++){
       this.displayWord[i] = "_";
       console.log(this.displayWord[i]);
-      displayArea.innerHTML += '<div class="character-display"></div>';
+      displayArea.innerHTML += '<div class="character-display col-xs-1"></div>';
       var displayCharacter = document.getElementsByClassName("character-display");
       displayCharacter[i].innerHTML = this.displayWord[i];
 
@@ -110,7 +110,7 @@ var game = {
       this.numBlanks = 99; //resets numBlanks to 99
 
       this.guessCount = 0;//reset guesscount to 0
-      
+
       for (var i = 0; i < this.guessedLettersArchive.length; i++){
         this.guessedLettersArchive[i] = " ";
       }//resets guessed letter archive back to blank

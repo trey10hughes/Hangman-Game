@@ -1,0 +1,61 @@
+#characterSelectScreen {
+	background-image: url(../images/meleecss.jpeg);
+	background-size: 100%;
+}
+
+#jumboh1{
+	color: #93bcff;
+	text-shadow: 4px 4px #3d4d68
+}
+
+#jumboh2{
+	color: #93bcff;
+	text-shadow: 4px 4px #3d4d68
+}
+
+#getStarted{
+	color: #93bcff;
+	text-shadow: 4px 4px #3d4d68
+}
+
+#numberOfWins{
+	color: #93bcff;
+	text-shadow: 4px 4px #3d4d68
+}
+
+.container{
+	background-color: #030b1d;
+}
+
+body{
+	background-color: #030b1d;
+}
+
+#topPanel1{
+	background-color: #c4a13e;
+}
+
+#topPanel2{
+	background-color: #c4a13e;
+}
+
+#topPanel3{
+	background-color: #c4a13e;
+}
+
+.panel{
+	background-color: #4f5763;
+}
+
+#display-word-area{
+	color: white;
+}
+
+#stockCount{
+	font-size: 36px;
+	color: white;
+}
+
+#letters-guessed{
+	color: white;
+}

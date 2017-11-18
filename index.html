@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Captain Planet: The Game</title>
+  <title>Hangman!</title>
 
   <!-- Bootstrap File -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="assets/css/style.css">
 
 
 
@@ -17,22 +17,18 @@
   <div class="container">
 
     <!-- Jumbotron with Title -->
-    <div class="jumbotron">
-      <h1 class="text-center"><strong>Melee Hangman!</strong></h1>
-      <h2 class="text-center">Guess your character!</h2>
+    <div class="jumbotron" id='characterSelectScreen'>
+      <h1 class="text-center" id='jumboh1'><strong>Melee Hangman!</strong></h1>
+      <h2 class="text-center" id='jumboh2'>Guess your character!</h2>
       <h4 class="text-center" id="getStarted">Press any key to get started!</h4> 
       <hr>
-      <h4 class="text-center" id='numberOfWins'></h4>
-      <div class="text-center">
-        <button class="btn btn-warning btn-xs theme-button"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>
-        <button class="btn btn-default btn-xs pause-button"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
-      </div>
+      <h2 class="text-center" id='numberOfWins'></h2>
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="panel panel-default">
-          <div class="panel-heading">
+          <div class="panel-heading" id='topPanel1'>
             <h3 class="panel-title">Stock Count</h3>
           </div>
           <div class="panel-body">
@@ -44,10 +40,10 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-8">
         <div class="row">
           <div class="panel panel-default">
-          <div class="panel-heading">
+          <div class="panel-heading" id='topPanel2'>
             <h3 class="panel-title">Letters Guessed</h3>
           </div>
           <div class="panel-body">
@@ -59,11 +55,11 @@
         </div>
         <div class="row">
           <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Display for word being guessed</h3>
+          <div class="panel-heading" id='topPanel3'>
+            <h3 class="panel-title">Character to Guess</h3>
           </div>
           <div class="panel-body">
-            <div class="text-center" id='display-word-area'>
+            <div class="row" id='display-word-area'>
               Word being guessed goes here:
             </div>
           </div>
